@@ -50,7 +50,7 @@ describe("Interactive", () => {
           mount(<Element color={colorType}>Submit</Element>);
           const color = secondaryColors({ colorType });
 
-          cy.get("button.btn-element")
+          cy.get(".btn-element")
             .click()
             .onHover()
             .pseudoCss(des.css, des.pseudo)

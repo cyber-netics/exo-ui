@@ -6,7 +6,6 @@ import {
   fontSizePrimary,
   backgroundPrimary,
   backgroundSecondary,
-  borderFocusPrimary,
 } from "Shared";
 
 export const base = css`
@@ -24,7 +23,6 @@ export const dynamicStyle = css`
   ${backgroundPrimary};
 
   &:hover {
-    ${borderFocusPrimary};
     ${backgroundSecondary};
   }
 `;
