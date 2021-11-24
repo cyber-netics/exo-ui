@@ -1,4 +1,6 @@
 {
+  "name": "exo-ui",
+  "main": "build/index.js",
   "scripts": {
     "start": "react-scripts start",
     "dev": "cross-env TS_NODE_PROJECT=\"./configs/webpack.tsconfig.json\" webpack s --config ./webpack.config.dev.ts",
