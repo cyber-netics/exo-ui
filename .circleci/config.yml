@@ -1,0 +1,27 @@
+jobs:
+  components:
+    docker:
+      - image: cimg/node:16.13.0
+
+    steps:
+      - checkout
+      - run:
+          name: Installation
+          command: |
+            npm run install
+
+      - run:
+          name: Build
+          command: |
+            npm run build
+
+      - run:
+          name: Test
+          command: |
+            npm run test
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - components

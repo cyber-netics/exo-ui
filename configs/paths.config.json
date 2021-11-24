@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "Components/*": ["./src/Components/*"],
+      "Shared": ["./src/Shared"],
+      "Forms/*": ["./src/Forms/*"],
+      "Assets/*": ["./src/Assets/*"]
+    }
+  }
+}
