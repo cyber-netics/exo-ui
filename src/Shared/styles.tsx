@@ -10,6 +10,7 @@ import {
   secondaryShadow,
   primaryHeight,
   secondaryHeight,
+  tertiaryHeight,
 } from "./dynamic";
 
 /**
@@ -81,6 +82,11 @@ export const sizeSecondary = css`
   height: ${secondaryHeight};
 `;
 
+export const sizeTertiary = css`
+  width: ${tertiaryHeight};
+  height: ${tertiaryHeight};
+`;
+
 export const hightPrimary = css`
   min-height: ${primaryHeight};
 `;
@@ -95,4 +101,14 @@ export const fontSizePrimary = css`
  */
 export const paddingPrimary = css`
   padding: ${primarySpace};
+`;
+
+/**
+ *
+ * Dynamic Border
+ */
+export const borderRadius = css<{ radius?: number }>`
+  border-radius: ${({ radius }) => {
+    return radius ? `${radius}px` : "inherit";
+  }} !important;
 `;

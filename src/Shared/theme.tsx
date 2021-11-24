@@ -1,11 +1,11 @@
 export const colors = {
   dark: "rgb(0, 0, 0)",
-  dark1: "#000000d4",
+  dark1: "rgb(48, 48, 48)",
   dark2: "rgb(114 114 114 / 28%)",
   dark3: "rgb(0 0 0 / 6%)",
 
   primary: "rgb(24, 144, 255)",
-  primary1: "#40a9ff",
+  primary1: "rgb(64, 169, 255)",
   primary2: "rgb(24 144 255 / 20%)",
   primary3: "#1890ff",
 
@@ -54,6 +54,11 @@ export const theme = {
       small: "16px",
       medium: "17px",
       large: "18px",
+    },
+    tertiary: {
+      small: "10px",
+      medium: "11px",
+      large: "12px",
     },
   },
 

@@ -39,6 +39,10 @@ export const secondaryHeight = ({ sizeType = "small" }: InnerSizeTypes) => {
   return theme.sizes.secondary[sizeType];
 };
 
+export const tertiaryHeight = ({ sizeType = "small" }: InnerSizeTypes) => {
+  return theme.sizes.tertiary[sizeType];
+};
+
 export const primaryFontSize = ({ sizeType = "small" }: InnerSizeTypes) => {
   return theme.font.primary[sizeType];
 };

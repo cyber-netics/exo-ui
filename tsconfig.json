@@ -17,6 +17,6 @@
     "jsx": "react",
     "baseUrl": "."
   },
-  "include": ["src/**/*", "cypress/**/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
