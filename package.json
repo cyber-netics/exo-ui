@@ -6,6 +6,7 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "cypress open-ct --browser chrome --config-file ./cypress.json",
+    "test:int": "cypress open --browser chrome",
     "test:headless": "cypress run-ct --config-file ./cypress.json",
     "postinstall": "husky install"
   },

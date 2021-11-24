@@ -40,7 +40,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.tsx?$/,
+        test: /\.(js|jsx|mjs|ts|tsx)$/,
         exclude: [/node_modules/],
         use: [
           {

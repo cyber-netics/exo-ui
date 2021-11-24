@@ -3,8 +3,8 @@ import { mount } from "@cypress/react";
 import Button, { ButtonProps } from "Components/Button";
 
 import { IColorTypes, ISizeTypes } from "Shared"; // Types
-import { primaryColors, primaryFontColors, secondaryColors } from "Shared";
 import { primaryHeight, primarySpace, primaryFontSize } from "Shared";
+import { primaryColors, primaryFontColors, secondaryColors } from "Shared";
 
 const Element: React.FC<ButtonProps> = (props) => (
   <Button className="btn-element" {...props}>
@@ -17,7 +17,7 @@ const sizeList: ISizeTypes[] = ["small", "medium", "large"];
 
 const sizeTests = [
   { name: "Height", css: "min-height", mock: primaryHeight },
-  { name: "Spacing", css: "padding", mock: primarySpace },
+  { name: "Spacing", css: "padding", mock: primarySpace, browser: "chrome" },
   { name: "Font", css: "font-size", mock: primaryFontSize },
 ];
 
@@ -27,18 +27,24 @@ const colorTests = [
 ];
 
 const interactiveColorTest = [
-  { name: "Hover", css: "backgroundColor", mock: secondaryColors },
+  {
+    name: "Hover",
+    css: "backgroundColor",
+    mock: secondaryColors,
+    browser: "chrome",
+  },
   {
     name: "Wave Animation",
     pseudo: "after",
     css: "boxShadow",
     mock: secondaryColors,
+    browser: "chrome",
   },
 ];
 
 describe("Interactive", () => {
   interactiveColorTest.forEach((des) => {
-    describe(des.name, () => {
+    describe(des.name, { browser: des.browser }, () => {
       colorList.forEach((colorType) => {
         it(colorType, () => {
           mount(<Element color={colorType}>Submit</Element>);
@@ -58,7 +64,7 @@ describe("Interactive", () => {
 
 describe("Dynamic Sizes", () => {
   sizeTests.forEach((des) => {
-    describe(des.name, () => {
+    describe(des.name, { browser: des.browser }, () => {
       sizeList.forEach((sizeType) => {
         it(sizeType, () => {
           mount(<Element size={sizeType}>Submit</Element>);

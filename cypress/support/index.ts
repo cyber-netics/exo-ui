@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-namespace */
 /// <reference types="cypress" />
 import "regenerator-runtime/runtime";
-
 import "./commands";
 
 declare global {

@@ -1,13 +1,7 @@
-import React from "react";
-import { mount } from "@cypress/react";
+cy.visit("http://localhost:8080");
 
 describe("Test Run", () => {
   it("renders a basic component", () => {
-    const Button = () => (
-      <button onClick={() => console.log("...")}>Submit</button>
-    );
-
-    mount(<Button />);
-    cy.get("button").click();
+    cy.log("---");
   });
 });
