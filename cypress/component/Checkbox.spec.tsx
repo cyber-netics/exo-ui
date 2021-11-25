@@ -7,7 +7,7 @@ import {
   secondaryHeight,
   primaryFontSize,
   primaryColors,
-  secondaryColors,
+  // secondaryColors,
 } from "Shared";
 
 const Element: React.FC<CheckboxProps> = (props) => (
@@ -29,15 +29,15 @@ const colorTests = [
   //   { name: "Font", css: "color", mock: primaryFontColors },
 ];
 
-const interactiveColorTest = [
-  {
-    name: "Hover",
-    css: "backgroundColor",
-    mock: secondaryColors,
-    browser: "chrome",
-    pseudo: "after",
-  },
-];
+// const interactiveColorTest = [
+//   {
+//     name: "Hover",
+//     css: "backgroundColor",
+//     mock: secondaryColors,
+//     browser: "chrome",
+//     pseudo: "after",
+//   },
+// ];
 
 // describe("Interactive", () => {
 //   interactiveColorTest.forEach((des) => {

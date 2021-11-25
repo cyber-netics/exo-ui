@@ -1,11 +1,16 @@
 import React from "react";
-import { ElemProps } from "Shared/types";
+import { ElemProps } from "Shared";
 import { Wrapper, BaseElem } from "./styles";
 
-const Avatar: React.FC<ElemProps> = (props) => {
+export interface AvatarProps extends ElemProps {
+  className?: string;
+  children?: JSX.Element;
+}
+
+const Avatar: React.FC<AvatarProps> = (props) => {
   return (
     <Wrapper>
-      <BaseElem sizeType={props.size} />
+      <BaseElem className={props.className} sizeType={props.size} />
     </Wrapper>
   );
 };

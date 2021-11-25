@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "Components/Button";
 import Checkbox from "Components/Checkbox";
+import { Input, InputEmail, InputNumber } from "Components/Input";
 
 const Section = styled.div`
   padding: 10px 0;
@@ -30,6 +31,20 @@ const App: React.FC = () => {
         <div>
           <h2>Primary</h2>
           <Checkbox className="testclass" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Primary</h2>
+          <Input error={true} />
+        </div>
+        <div>
+          <h2>Primary</h2>
+          <InputEmail />
+        </div>
+        <div>
+          <h2>Primary</h2>
+          <InputNumber error={true} />
         </div>
       </div>
     </div>

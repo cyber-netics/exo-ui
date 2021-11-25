@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { InnerSize } from "Shared/types";
-import { sizePrimary } from "Shared/styles";
+import { InnerSizeTypes } from "Shared";
+import { sizePrimary } from "Shared";
 
 export const Container = styled.div`
   position: relative;
@@ -22,9 +22,8 @@ export const Wrapper = styled.span`
   line-height: 1;
 `;
 
-export const BaseElem = styled.span<InnerSize>`
+export const BaseElem = styled.span<InnerSizeTypes>`
   ${sizePrimary};
-
   line-height: 40px;
   box-sizing: border-box;
   margin: 0;

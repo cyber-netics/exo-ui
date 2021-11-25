@@ -1,14 +1,16 @@
 export const colors = {
   dark: "rgb(0, 0, 0)",
   dark1: "rgb(48, 48, 48)",
-  dark2: "rgb(114 114 114 / 28%)",
+  dark2: "rgba(114, 114, 114, 0.3)",
   dark3: "rgb(0 0 0 / 6%)",
 
   primary: "rgb(24, 144, 255)",
   primary1: "rgb(64, 169, 255)",
-  primary2: "rgb(24 144 255 / 20%)",
+  primary2: "rgba(24, 144, 255, 0.3)",
   primary3: "#1890ff",
 
+  error: "rgb(255, 77, 79)",
+  error1: "rgba(255, 77, 79, 0.3)",
   light: "rgb(255, 255, 255)",
   highlight: "rgb(217, 217, 217)",
 };

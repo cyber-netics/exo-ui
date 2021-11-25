@@ -45,11 +45,18 @@ export const borderHoverPrimary = css`
   }
 `;
 
-export const borderFocusPrimary = css`
-  ${borderDefault};
-  &:focus {
-    ${borderPrimary};
-  }
+export const borderFocusError = css<{ error?: boolean }>`
+  ${({ error }) => {
+    return (
+      error &&
+      `
+      border-color: ${colors.error} !important;
+      &:focus {
+        box-shadow: 0 0 0 2px ${colors.error1} !important;
+      }
+      `
+    );
+  }}
 `;
 
 // Shadow
@@ -65,6 +72,14 @@ export const shadowSecondary = css`
 export const shadowFocusPrimary = css`
   &:focus {
     ${shadowPrimary};
+  }
+`;
+
+export const borderFocusPrimary = css`
+  ${borderDefault};
+  &:focus {
+    ${borderPrimary};
+    ${shadowFocusPrimary};
   }
 `;
 

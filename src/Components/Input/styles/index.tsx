@@ -1,11 +1,18 @@
 import styled, { css } from "styled-components";
 import { InnerProps } from "Shared";
+import { EventOnChange } from "../input";
 import {
   hightPrimary,
+  borderFocusError,
   borderHoverPrimary,
   borderFocusPrimary,
   shadowFocusPrimary,
 } from "Shared";
+
+export interface InputElemProps extends InnerProps {
+  error?: boolean;
+  onChange?: (e: EventOnChange) => void;
+}
 
 const base = css`
   outline: 0;
@@ -27,10 +34,10 @@ const dynamicStyle = css`
   ${hightPrimary};
   ${borderHoverPrimary};
   ${borderFocusPrimary};
-  ${shadowFocusPrimary};
+  ${borderFocusError};
 `;
 
-export const InputElem = styled.input<InnerProps>`
+export const InputElem = styled.input<InputElemProps>`
   ${base};
   ${dynamicStyle};
 `;

@@ -19,8 +19,9 @@ function pseudoCss(elem, style, pseudoElem) {
   return before[style];
 }
 
-function parseColor(color) {
+function parseColor(color, type) {
   const rgbColor = extractRgb(color);
+  if (type === "rgba") return rgbColor;
   return convertRgb(rgbColor);
 }
 

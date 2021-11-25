@@ -13,7 +13,7 @@ declare global {
       hasChild(value: string): Chainable<Element>;
       timesToClick(value: string): Chainable<Element>;
       pseudoCss(style: string, pseudoStyle?: string): Chainable<Element>;
-      parseColor(): Chainable<Element>;
+      parseColor(type?: "rgba"): Chainable<Element>;
       onHover(): Chainable<Element>;
     }
   }
