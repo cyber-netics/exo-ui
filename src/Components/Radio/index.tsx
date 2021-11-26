@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { ISizeTypes, IColorTypes, EventOnChange, EventTarget } from "Shared"; //Types
+import { ElemProps, EventOnChange, EventTarget } from "Shared"; //Types
 import { RadioWrapper, LabelText, Label, Mark, Input } from "./styles";
 
-export interface RadioProps {
+export interface RadioProps extends ElemProps {
   name?: string;
-  size?: ISizeTypes;
-  color?: IColorTypes;
   disabled?: boolean;
   className?: string;
   onChange?: (e: EventTarget) => void;

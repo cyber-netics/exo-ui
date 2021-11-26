@@ -1,5 +1,5 @@
 import React from "react";
-import { InnerSizeTypes, ISizeTypes } from "Shared";
+import { ElemSizeTypes } from "Shared";
 import {
   Wrapper,
   BreadcrumbItems,
@@ -8,9 +8,8 @@ import {
   SecondaryLink,
 } from "./styles";
 
-export interface BreadcrumbProps extends InnerSizeTypes {
+export interface BreadcrumbProps extends ElemSizeTypes {
   steps: string[];
-  size?: ISizeTypes;
   className?: string;
   active?: number | string;
 }
