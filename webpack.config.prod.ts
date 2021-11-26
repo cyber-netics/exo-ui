@@ -9,9 +9,10 @@ class Settings {
   static html_template = "./public/index.html";
   static output_dir = "build";
   static extensions: string[] = [".ts", ".tsx", ".js", ".json"];
-  static bundlename = "[name].[contenthash].bundle.js";
+  static bundlename = "index.js";
   static mode: "production" = "production";
   static stats: "errors-only" = "errors-only";
+  static libraryTarget: "commonjs";
 }
 
 const config: webpack.Configuration = {
@@ -27,7 +28,7 @@ const config: webpack.Configuration = {
   output: {
     filename: Settings.bundlename,
     path: path.resolve(__dirname, Settings.output_dir),
-    libraryTarget: "commonjs",
+    libraryTarget: Settings.libraryTarget,
   },
 
   resolve: {
