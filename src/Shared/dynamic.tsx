@@ -74,3 +74,13 @@ export const secondaryFontSize = ({ sizeType = "small" }: InnerSizeTypes) => {
 export const primarySpace = ({ sizeType = "small" }: InnerSizeTypes) => {
   return theme.spacing.primary[sizeType];
 };
+
+/**
+ *
+ * Hightlites
+ */
+export const primaryHighlight = ({
+  colorType = "primary",
+}: InnerColorTypes) => {
+  return theme.colors.highlight.primary[colorType];
+};

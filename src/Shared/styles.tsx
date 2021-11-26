@@ -14,6 +14,7 @@ import {
   secondaryHeight,
   tertiaryHeight,
   primaryStatusColors,
+  primaryHighlight,
 } from "./dynamic";
 
 /**
@@ -34,6 +35,10 @@ export const backgroundPrimary = css`
 
 export const backgroundSecondary = css`
   background-color: ${secondaryColors};
+`;
+
+export const backgroundHighlight = css`
+  background-color: ${primaryHighlight};
 `;
 
 /**

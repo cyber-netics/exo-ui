@@ -8,7 +8,7 @@ export type EventTarget = { value: string; name: string };
 /**
  *
  */
-export type IColorTypes = "primary" | "dark";
+export type IColorTypes = "primary" | "dark" | "light";
 export type ISizeTypes = "small" | "medium" | "large";
 export type IStatusColorTypes = "success" | "error" | "neutral";
 
