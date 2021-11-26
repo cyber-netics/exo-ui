@@ -20,3 +20,14 @@ export const waveEffectDark = keyframes`
     box-shadow: 0 0 0 6px ${colors.dark1};
     }
 `;
+
+export const radioWaveEffectPrimary = keyframes`
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+`;

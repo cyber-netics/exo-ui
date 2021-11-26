@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Input, InputProps, EventTarget } from "./input";
+import { EventTarget } from "Shared"; // Types
+import { Input, InputProps } from "./input";
 
 export const InputNumber: React.FC<InputProps> = (props) => {
   const [value, setValue] = useState("");

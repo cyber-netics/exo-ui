@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "Components/Button";
 import Checkbox from "Components/Checkbox";
+import Radio from "Components/Radio";
 import { Input, InputEmail, InputNumber } from "Components/Input";
 
 const Section = styled.div`
@@ -45,6 +46,20 @@ const App: React.FC = () => {
         <div>
           <h2>Primary</h2>
           <InputNumber error={true} />
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Small</h2>
+          <Radio size="small" />
+        </div>
+        <div>
+          <h2>Medium</h2>
+          <Radio size="medium" />
+        </div>
+        <div>
+          <h2>Large</h2>
+          <Radio color={"dark"} size="large" />
         </div>
       </div>
     </div>

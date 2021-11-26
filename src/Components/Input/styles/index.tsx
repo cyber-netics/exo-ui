@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components";
+import { EventOnChange } from "Shared"; //Types
 import { InnerProps } from "Shared";
-import { EventOnChange } from "../input";
 import {
   hightPrimary,
   borderFocusError,
   borderHoverPrimary,
   borderFocusPrimary,
-  shadowFocusPrimary,
+  // shadowFocusPrimary,
 } from "Shared";
 
 export interface InputElemProps extends InnerProps {

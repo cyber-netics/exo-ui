@@ -26,9 +26,11 @@ const Checkbox: React.FC<CheckboxProps> = (props) => {
           colorType={props.color}
           className={props.className}
         >
-          <LabelText>
-            <>{props.children}</>
-          </LabelText>
+          {props.children && (
+            <LabelText>
+              <>{props.children}</>
+            </LabelText>
+          )}
         </Mark>
       </Wrapper>
     </Label>

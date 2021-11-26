@@ -16,6 +16,7 @@ function clickNum(elem, clickNum) {
 function pseudoCss(elem, style, pseudoElem) {
   const win = elem[0].ownerDocument.defaultView;
   const before = win?.getComputedStyle(elem[0], `:${pseudoElem || ""}`);
+  console.log("----->", before[style]);
   return before[style];
 }
 

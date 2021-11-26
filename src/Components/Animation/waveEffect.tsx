@@ -5,6 +5,7 @@ import {
   fadeEffect,
   waveEffectPrimary,
   waveEffectDark,
+  radioWaveEffectPrimary,
 } from "Components/Animation/common";
 
 const base = css`
@@ -34,4 +35,10 @@ export const waveAnimation = css`
     ${animation};
     ${borderRadius};
   }
+`;
+
+export const radioWaveAnim = css`
+  animation: ${radioWaveEffectPrimary} 0.3s ease-in-out;
+  width: 13px;
+  height: 13px;
 `;

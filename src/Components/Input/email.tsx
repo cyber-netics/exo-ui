@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Input, InputProps, EventTarget } from "./input";
+import { EventTarget } from "Shared"; //Types
+import { Input, InputProps } from "./input";
 
 const Regex =
   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

@@ -1,9 +1,7 @@
 import React from "react";
+import { EventOnChange, EventTarget } from "Shared"; //Types
 import { ElemProps } from "Shared";
 import { InputElem } from "./styles";
-
-export type EventOnChange = React.FormEvent<HTMLInputElement>;
-export type EventTarget = { value: string; name: string };
 
 export interface InputProps extends ElemProps {
   name?: string;
