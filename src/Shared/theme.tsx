@@ -12,6 +12,7 @@ export const colors = {
   highlight: "rgb(217, 217, 217)",
   highlight1: "rgb(115, 115, 115)",
 
+  success: "rgb(82, 196, 26)",
   error: "rgb(255, 77, 79)",
   error1: "rgba(255, 77, 79, 0.3)",
   light: "rgb(255, 255, 255)",
@@ -49,6 +50,12 @@ export const theme = {
         dark: colors.dark3,
         primary: colors.primary3,
       },
+    },
+
+    status: {
+      error: colors.error,
+      neutral: colors.dark2,
+      success: colors.success,
     },
   },
 

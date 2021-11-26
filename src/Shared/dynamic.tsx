@@ -1,5 +1,9 @@
 import { theme } from "./theme";
-import { InnerColorTypes, InnerSizeTypes } from "./types";
+import {
+  InnerSizeTypes,
+  InnerColorTypes,
+  InnerStatusColorTypes,
+} from "./types";
 
 /**
  *
@@ -19,6 +23,12 @@ export const primaryShadow = ({ colorType = "primary" }: InnerColorTypes) => {
 
 export const secondaryShadow = ({ colorType = "primary" }: InnerColorTypes) => {
   return theme.colors.shadow.secondary[colorType];
+};
+
+export const primaryStatusColors = ({
+  colorType = "success",
+}: InnerStatusColorTypes) => {
+  return theme.colors.status[colorType];
 };
 
 export const primaryFontColors = ({

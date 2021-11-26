@@ -1,18 +1,25 @@
 import React from "react";
-import { ElemColorAll, ElemSize } from "Shared/types";
-import { Wrapper, BadgeElem } from "./styles";
+import { ElemSizeTypes, ElemStatusColorTypes } from "Shared";
+import { Wrapper, BadgeElem, IShapeTypes } from "./styles";
 
-export interface BadgeProps extends ElemColorAll, ElemSize {
+export interface BadgeProps extends ElemSizeTypes, ElemStatusColorTypes {
+  count?: number;
+  className?: string;
+  shape?: IShapeTypes;
   children?: JSX.Element;
 }
 
 const Badge: React.FC<BadgeProps> = (props) => {
   return (
-    <div>
-      <Wrapper id="badge-component" sizeType={props.size}>
-        <BadgeElem id="badge-element" colorType={props.color} />
-      </Wrapper>
-    </div>
+    <Wrapper className={props.className} sizeType={props.size}>
+      <BadgeElem
+        shape={props.shape}
+        sizeType={props.size}
+        colorType={props.color}
+      >
+        <>{props.count && props.shape !== "dot" && props.count}</>
+      </BadgeElem>
+    </Wrapper>
   );
 };
 

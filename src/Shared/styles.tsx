@@ -13,6 +13,7 @@ import {
   primaryHeight,
   secondaryHeight,
   tertiaryHeight,
+  primaryStatusColors,
 } from "./dynamic";
 
 /**
@@ -33,6 +34,14 @@ export const backgroundPrimary = css`
 
 export const backgroundSecondary = css`
   background-color: ${secondaryColors};
+`;
+
+/**
+ *
+ * Status
+ */
+export const statusPrimary = css`
+  background-color: ${primaryStatusColors};
 `;
 
 // Border
