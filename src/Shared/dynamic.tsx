@@ -13,18 +13,24 @@ export const secondaryColors = ({ colorType = "primary" }: InnerColorTypes) => {
   return theme.colors.secondary[colorType];
 };
 
-export const primaryFontColors = ({
-  colorType = "primary",
-}: InnerColorTypes) => {
-  return theme.colors.font.primary[colorType];
-};
-
 export const primaryShadow = ({ colorType = "primary" }: InnerColorTypes) => {
   return theme.colors.shadow.primary[colorType];
 };
 
 export const secondaryShadow = ({ colorType = "primary" }: InnerColorTypes) => {
   return theme.colors.shadow.secondary[colorType];
+};
+
+export const primaryFontColors = ({
+  colorType = "primary",
+}: InnerColorTypes) => {
+  return theme.colors.font.primary[colorType];
+};
+
+export const secondaryFontColors = ({
+  colorType = "primary",
+}: InnerColorTypes) => {
+  return theme.colors.font.secondary[colorType];
 };
 
 /**
@@ -45,6 +51,10 @@ export const tertiaryHeight = ({ sizeType = "small" }: InnerSizeTypes) => {
 
 export const primaryFontSize = ({ sizeType = "small" }: InnerSizeTypes) => {
   return theme.font.primary[sizeType];
+};
+
+export const secondaryFontSize = ({ sizeType = "small" }: InnerSizeTypes) => {
+  return theme.font.secondary[sizeType];
 };
 
 /**

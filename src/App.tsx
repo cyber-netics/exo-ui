@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+
+import Radio from "Components/Radio";
 import Button from "Components/Button";
 import Checkbox from "Components/Checkbox";
-import Radio from "Components/Radio";
+import Breadcrumb from "Components/Breadcrumb";
 import { Input, InputEmail, InputNumber } from "Components/Input";
 
 const Section = styled.div`
@@ -60,6 +62,12 @@ const App: React.FC = () => {
         <div>
           <h2>Large</h2>
           <Radio color={"dark"} size="large" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Large</h2>
+          <Breadcrumb size="medium" steps={["step1", "step2"]} active={"1"} />
         </div>
       </div>
     </div>

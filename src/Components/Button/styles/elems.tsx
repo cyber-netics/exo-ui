@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 import {
-  fontColor,
+  fontColorPrimary,
   hightPrimary,
   paddingPrimary,
   fontSizePrimary,
@@ -16,10 +16,10 @@ export const base = css`
 `;
 
 export const dynamicStyle = css`
-  ${fontColor};
   ${hightPrimary};
   ${paddingPrimary};
   ${fontSizePrimary};
+  ${fontColorPrimary};
   ${backgroundPrimary};
 
   &:hover {

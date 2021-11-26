@@ -5,7 +5,9 @@ import {
   secondaryColors,
   primarySpace,
   primaryFontSize,
+  secondaryFontSize,
   primaryFontColors,
+  secondaryFontColors,
   primaryShadow,
   secondaryShadow,
   primaryHeight,
@@ -17,8 +19,12 @@ import {
  *
  * Colors
  */
-export const fontColor = css`
+export const fontColorPrimary = css`
   color: ${primaryFontColors};
+`;
+
+export const fontColorSecondary = css`
+  color: ${secondaryFontColors};
 `;
 
 export const backgroundPrimary = css`
@@ -108,6 +114,10 @@ export const hightPrimary = css`
 
 export const fontSizePrimary = css`
   font-size: ${primaryFontSize};
+`;
+
+export const fontSizeSecondary = css`
+  font-size: ${secondaryFontSize};
 `;
 
 /**
