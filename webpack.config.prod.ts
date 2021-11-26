@@ -2,6 +2,7 @@ import * as path from "path";
 import * as webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import alias from "./configs/paths.webpack";
+import nodeExternals from "webpack-node-externals";
 
 class Settings {
   static entry_file = "./src/index.tsx";
@@ -21,9 +22,12 @@ const config: webpack.Configuration = {
     index: path.resolve(__dirname, Settings.entry_file),
   },
 
+  externals: [nodeExternals()],
+
   output: {
     filename: Settings.bundlename,
     path: path.resolve(__dirname, Settings.output_dir),
+    libraryTarget: "commonjs",
   },
 
   resolve: {
