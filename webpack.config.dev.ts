@@ -8,7 +8,7 @@ class Settings {
   static entry_file = "src/index.tsx";
   static html_template = "public/index.html";
   static ts_config = "tsconfig.json";
-  static output_dir = "build";
+  static output_dir = "dist";
   static bundlename = "[name].[contenthash].bundle.js";
 
   static mode: "development" = "development";
@@ -108,7 +108,7 @@ const config: webpack.Configuration = {
       },
       {
         test: /\.(js|jsx|ts|tsx)$/,
-        exclude: /(node_modules|bower_components|build)/,
+        exclude: /(node_modules|bower_components|dist)/,
         use: {
           loader: "babel-loader",
           options: {

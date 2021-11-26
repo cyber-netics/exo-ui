@@ -10,7 +10,6 @@ import Thumbnail from "Components/Thumbnail";
 import Breadcrumb from "Components/Breadcrumb";
 import Select, { Option } from "Components/Select";
 import Dropdown from "Components/Dropdown";
-
 import { Input, InputEmail, InputNumber } from "Components/Input";
 
 const Section = styled.div`
