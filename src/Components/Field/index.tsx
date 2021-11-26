@@ -8,7 +8,7 @@ interface IProps {
 const Field: React.FC<IProps> = (props) => {
   return (
     <Row>
-      {props.children.length ? (
+      {!Array.isArray(props.children) ? (
         <Col col={1}>
           <>{props.children}</>
         </Col>

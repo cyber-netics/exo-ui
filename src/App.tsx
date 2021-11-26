@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
+import Badge from "Components/Badge";
+import Field from "Components/Field";
 import Radio from "Components/Radio";
 import Button from "Components/Button";
 import Checkbox from "Components/Checkbox";
+import Thumbnail from "Components/Thumbnail";
 import Breadcrumb from "Components/Breadcrumb";
-import Badge from "Components/Badge";
-
+import Select, { Option } from "Components/Select";
 import { Input, InputEmail, InputNumber } from "Components/Input";
 
 const Section = styled.div`
@@ -77,6 +79,30 @@ const App: React.FC = () => {
           <h2>Large</h2>
           <Badge size="large" shape="overflow" count={10} />
         </div>
+      </div>
+      <div>
+        <div>
+          <h2>Large</h2>
+          <Field>
+            <Select size="small">
+              <Option key="US">United States</Option>
+              <Option key="CA">Canada</Option>
+            </Select>
+            <Select size="large">
+              <Option key="US">United States</Option>
+              <Option key="CA">Canada</Option>
+            </Select>
+          </Field>
+        </div>
+      </div>
+      <div>
+        <Thumbnail
+          alt={"imageName"}
+          size="medium"
+          src={
+            "https://cdn.shopify.com/s/files/1/0009/3080/7852/products/16_2_small.jpg?v=1629541016"
+          }
+        />
       </div>
     </div>
   );
